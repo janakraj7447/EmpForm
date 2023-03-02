@@ -1,0 +1,32 @@
+@using EmpForm.Entities;
+@model IEnumerable<EmployeeForm>
+@{
+}
+<div>
+   display user details
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Employee_Name
+                </th>
+                 <th>
+                Email
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+ @foreach(var prod in Model)
+    {
+          <tr>
+            <td>
+                @prod.FirstName;
+                </td>
+                <td>
+                    @prod.Email;
+                    </td>
+            </tr>
+    }
+    </tbody>
+        </table>
